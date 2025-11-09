@@ -1,0 +1,23 @@
+{
+  "name": "vc2",
+  "version": "1.0.0",
+  "description": "\"# streamify\"",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm install --force --legacy-peer-deps --prefix frontend && npm install vite --force --prefix frontend && npm install --force --legacy-peer-deps --prefix backend",
+    "install-clean": "rimraf frontend/node_modules backend/node_modules && npm run install-all",
+    "build": "npm install vite --force --prefix frontend && npm run build --prefix frontend",
+    "start": "node --watch backend/src/server.js",
+    "dev": "concurrently \"npm run dev --prefix frontend\" \"npm start --prefix backend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anuj-Kumar-152/streamify/issues"
+  },
+  "homepage": "https://github.com/Anuj-Kumar-152/streamify#readme",
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

@@ -1,0 +1,30 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Vite build output
+build/
+
+# Local environment variables
+.env
+.env.local
+.env.*.local
+
+# Editor settings
+.vscode/
+.idea/
+*.swp
+
+# Mac / Linux / Windows system files
+.DS_Store
+Thumbs.db
+
+# Optional: if using TypeScript build cache
+*.tsbuildinfo
